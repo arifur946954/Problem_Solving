@@ -1,5 +1,9 @@
-import java.util.Scanner;
 
+//Best Case O(1)
+//Worst Case O(n);
+//Average Case O(n)
+//Space Complexity O(1)
+import java.util.Scanner;
 public class LinearSearch {
     public static void main(String[] args) {
         Scanner scanner=new Scanner(System.in);
@@ -38,3 +42,4 @@ public class LinearSearch {
 
     }
 }
+
