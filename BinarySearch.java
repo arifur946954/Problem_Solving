@@ -25,13 +25,10 @@ public class BinarySearch {
         return -1;
     }
 
-
-
-
     public static void main(String[] args) {
         BinarySearch bns=new BinarySearch();
         int[] binarySrch={1,2,3,4,5,6,7,8,9,10};
-        int serchVal=100;
+        int serchVal=5;
       int result=  bns.binarySearch(binarySrch,serchVal);
       if (result==-1){
           System.out.println("No data Found");
