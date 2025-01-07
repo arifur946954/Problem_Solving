@@ -9,14 +9,14 @@ public class InsertationSort {
             while (j >= 0 && array[j] > key) {
                 array[j + 1] = array[j];
                 j = j - 1;
-                System.out.println("J Value is "+j);
+                System.out.println("J Value is -"+j);
             }
             array[j + 1] = key;
         }
     }
 
     public static void main(String[] args) {
-        int[] array = {12, 11, 13, 5, 6};
+        int[] array = {11, 12,1, 13, 5, 6,65,1,66,999,-10,25,85};
         System.out.println("Original array:");
         printArray(array);
 
