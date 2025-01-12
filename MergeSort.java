@@ -59,13 +59,11 @@ public class MergeSort {
         if (l < r) {
 
             // Find the middle point
-            int m = l + (r - l) / 2;//1
-
+            int m = l + (r - l) / 2;
             // Sort first and second halves
-            sort(arr, l, m);//{5,3,10,25},0,1=>
-            System.out.println(" first half : "+l +", " +m );
-            sort(arr, m + 1, r);//{5,3,10,25},2,3
-            System.out.println(" second half : "+(m+1) +" ," +r );
+            sort(arr, l, m);
+            sort(arr, m + 1, r);
+
 
             // Merge the sorted halves
             merge(arr, l, m, r);
