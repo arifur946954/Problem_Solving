@@ -1,6 +1,7 @@
 public class palindromeB {
     public static void main(String[] args) {
-        String value="12321";
+        String vl="Aba";
+        String value=vl.toLowerCase();
         String Reversed="";
         int len=value.length()-1;
         for (int i = len; i >= 0; i--) {
