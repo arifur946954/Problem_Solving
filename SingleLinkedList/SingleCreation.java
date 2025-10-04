@@ -3,6 +3,7 @@ package SingleLinkedList;
 import java.util.Scanner;
 
 public class SingleCreation {
+    Node head=null;
     static  class Node{
        int head;
        Node next;
@@ -11,23 +12,28 @@ public class SingleCreation {
           this.next=null;
        }
     }
-    Node head=null;
+
 
 
 
     public void creation(){
     int data,n;
+
         Scanner sc=new Scanner(System.in);
         do {
             System.out.println("Please inter data");
             data= sc.nextInt();
             Node new_node=new Node(data);
+
+
+            System.out.println("New_node is"+new_node.head);
             if (head==null){
                 head=new_node;
             }
             else {
                 new_node.next=head;
                 head=new_node;
+
             }
             System.out.println("Do you want to add more data if yes press 1 ");
             n=sc.nextInt();
